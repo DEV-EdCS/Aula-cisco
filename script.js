@@ -1,26 +1,26 @@
-let  user1  =  {
-    name:  "Calvin",
-    surname:  "Hart",
-    age:  66,
-    email:  "CalvinMHart@teleworm.us"
+let user1 = {
+    name: "Calvin",
+    surname: "Hart",
+    age: 66,
+    email: "CalvinMHart@teleworm.us"
 };
 
-let  user2  =  {
-    name:  "Mateus",
-    surname:  "Pinto",
-    age:  21,
-    email:  "MateusPinto@dayrep.com"
+let user2 = {
+    name: "Mateus",
+    surname: "Pinto",
+    age: 21,
+    email: "MateusPinto@dayrep.com"
 };
 
 console.log(user1.name);  //  ->  Calvin
 console.log(user2.name);  //  ->  Mateus
-   
+
 console.log(user1.age);  //  ->  66
-user1.age  =  67;
+user1.age = 67;
 console.log(user1.age);  //  ->  67
-   
+
 console.log(user2.phone);  //  ->  undefined
-user2.phone  =  "904-399-7557";
+user2.phone = "904-399-7557";
 console.log(user2.phone);  //  ->  904-399-7557
 
 console.log(user2.surname); // Pinto
@@ -43,3 +43,49 @@ console.log(bandas.length)
 bandas[4] = "matanza"
 console.log(bandas.length)
 console.log(bandas)
+
+let ticket = {
+    partida: "Parque Vitória",
+    chegada: "Senac",
+    preço: 4.20
+}
+
+console.log(`Ticket partida: ${ticket.partida}`)
+console.log(`Ticket chegada: ${ticket.chegada}`)
+console.log(`Ticket preço: ${ticket.preço}`)
+
+let pessoa = {}
+
+pessoa.nome = "Edlan"
+pessoa.sobrenome = "Carvalho"
+pessoa.sobrenome2 = "Silva"
+console.log(`${pessoa.nome} ${pessoa.sobrenome} ${pessoa.sobrenome2}`)
+
+const livros = [{
+    titulo: 'Falando JavaScript',
+    autor: 'Axel Rauschmayer',
+    num_pag: '460'
+},
+{
+    titulo: 'Programação de aplicações JavaScript',
+    autor: 'Eric Elliot',
+    num_pag: '254'
+},
+{
+    titulo: 'Compreendendo ECMAScript 6',
+    autor: 'Nicholas C. Zakas',
+    num_pag: '352'
+}
+]
+
+const novoLivro = {
+    titulo: 'Learning JavaScript Design Patterns',
+    autor: 'Addy Osmani',
+    num_pag: '254'
+}
+livros.push(novoLivro)
+console.log(livros.length)
+console.log(livros[0].titulo);
+console.log(livros[1].titulo);
+console.log(livros[2].titulo);
+console.log(livros[3].titulo);
