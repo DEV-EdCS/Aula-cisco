@@ -85,9 +85,7 @@ const novoLivro = { //Criei um novo item para o array "livros"
 }
 livros.push(novoLivro) //Usei o "push" para trazer o novo item para o array "livros"
 console.log(livros.length) //Mostra quantos item possui no array, com mais essa adição
-console.log(livros[0,1,2,3].titulo);
+console.log(livros[0].titulo);
 console.log(livros[1].titulo);
 console.log(livros[2].titulo);
 console.log(livros[3].titulo);
-
-
