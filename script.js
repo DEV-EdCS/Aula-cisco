@@ -78,14 +78,16 @@ const livros = [{
 }
 ]
 
-const novoLivro = {
+const novoLivro = { //Criei um novo item para o array "livros"
     titulo: 'Learning JavaScript Design Patterns',
     autor: 'Addy Osmani',
     num_pag: '254'
 }
-livros.push(novoLivro)
-console.log(livros.length)
+livros.push(novoLivro) //Usei o "push" para trazer o novo item para o array "livros"
+console.log(livros.length) //Mostra quantos item possui no array, com mais essa adição
 console.log(livros[0].titulo);
 console.log(livros[1].titulo);
 console.log(livros[2].titulo);
 console.log(livros[3].titulo);
+
+
