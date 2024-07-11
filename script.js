@@ -64,24 +64,24 @@ console.log(`${pessoa.nome} ${pessoa.sobrenome} ${pessoa.sobrenome2}`)
 const livros = [{
     titulo: 'Falando JavaScript',
     autor: 'Axel Rauschmayer',
-    num_pag: '460'
+    num_pag: 460
 },
 {
     titulo: 'Programação de aplicações JavaScript',
     autor: 'Eric Elliot',
-    num_pag: '254'
+    num_pag: 254
 },
 {
     titulo: 'Compreendendo ECMAScript 6',
     autor: 'Nicholas C. Zakas',
-    num_pag: '352'
+    num_pag: 352
 }
 ]
 
 const novoLivro = { //Criei um novo item para o array "livros"
     titulo: 'Learning JavaScript Design Patterns',
     autor: 'Addy Osmani',
-    num_pag: '254'
+    num_pag: 254
 }
 livros.push(novoLivro) //Usei o "push" para trazer o novo item para o array "livros"
 console.log(livros.length) //Mostra quantos item possui no array, com mais essa adição
@@ -89,3 +89,14 @@ console.log(livros[0].titulo);
 console.log(livros[1].titulo);
 console.log(livros[2].titulo);
 console.log(livros[3].titulo);
+
+let selectedlivros = livros.slice(-2)//O comando slice para copia os dois últimos livros para a nova matriz.
+
+livros.shift()
+console.log(livros.length)
+console.log(livros[0].titulo)
+console.log(livros[1].titulo)
+console.log(livros[2].titulo)
+
+let soma = livros[0].num_pag + livros[1].num_pag + livros[2].num_pag
+console.log(`Paginas: ${soma}`)
